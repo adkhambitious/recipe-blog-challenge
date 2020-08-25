@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Playfair Display-bold;
+    src: url(/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: Playfair Display-normal;
+    src: url(/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+
+body {
+    background-color: rgb(173, 173, 70);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 95%; /*93.75% = 1440px */
+    height: 2989px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+
+.title {
+    background-color: white;
+    width: 100%;
+}
+
+.title header {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+/* identical to box height */
+    color: #000000;
+    width: 100%;
+}
+
+.description {
+    width: 100%;
+    height: 2%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5%;
+}
+
+#icon {
+    width: 1%;
+    height: auto;
+    margin-right: 0.5%;
+    background-color: white;
+    display: flex;
+}
+
+#icon img{
+    width: 100%;
+    height: 15%;
+    margin-top: 25%;
+}
+
+#meaning p {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* Gray 2 */
+    color: #4F4F4F;
+    background-color: white;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    margin-top: 17px;
+}
+
+
+
+.ingredients {
+    width: 100%;
+    height: 750px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ingredientsDose {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+}
+
+#ingredientsDose h2 {
+    margin-top: 48px;
+    font-family: Playfair Display-bold;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+#ingredientsDose h3 {
+    margin-top: 32px;
+    margin-bottom: 31px;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#ingredientsDose #four {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+
+    color: #333333;
+}
+
+#totalTime {
+    margin-top: 48px;
+    width: 216px;
+    height: 367px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    
+}
+
+#totaltime #prep_time, #cooktime, #commontime, img {
+    color: white;
+} 
+
+.together {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.union {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    justify-content: space-around;
+}
+
+#timeicon img {
+    width: 130%;
+    height: 100%;
+}
+
+.uppercase {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #BDBDBD;
+}
+
+#forkicon img{
+    width: 130%;
+    height: 100%;
+}
+
+.colored {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2994A;
+}
+
+.norm {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+#yields {
+    background-color: white;
+}
+
+#prep_time {
+    background-color: white;
+}
+
+#cooktime {
+    background-color: white;
+}
+
+#commontime {
+    background-color: white;
+}
+
+input {
+    width: 21px;
+    height: 21px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: red;
+    margin-top: 14px;
+}
+
+p input label {
+    font-size: 20px;
+}
+
+
+
+.steps {
+    width: 70%;
+    height: 1400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.steps h2 {
+    margin-top: 48px;
+    margin-bottom: 5px;
+    font-family: Playfair Display-bold;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.step {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+}
+
+.orange {
+    width: 36px;
+    height: 36px;
+    background-color: green;
+    display: flex;
+    background: #F2994A;
+    border-radius: 6px;
+    align-items: center;
+}
+
+
+
+.text {
+    width: 560px;
+    min-height: 60px;
+    background-color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 20px;
+    color: #000000;
+}
+
+.orange {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+label {
+    cursor: pointer;
+}
+
+@media (max-width:1440px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+@media (max-width:767px) {
+    .title header {
+        font-size: 30px;
+    }
+    
+    .ingredients {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+}
